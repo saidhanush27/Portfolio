@@ -52,30 +52,46 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
+      padding: 10px 20px;
   }
 
   .nav-links {
-      flex-direction: column;
-      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      width: auto;
   }
 
   .nav-links li {
-      margin: 10px 0;
+      margin: 0;
+      display: inline-block;
+  }
+
+  .nav-logo {
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-links li a {
+      font-size: 16px;
+      padding: 10px;
   }
 
   .fh5co-social-icons li a {
-      font-size: 24px; /* Smaller icons for mobile */
+      font-size: 24px; /* Adjusted icon size */
   }
 
   .col-md-4, .col-md-8 {
-      width: 100%; /* Full width for smaller screens */
-      margin-bottom: 20px; /* Space between sections */
+      width: 100%;
+      margin-bottom: 20px;
   }
 
   .chart {
-      width: 80%; /* Adjust chart width */
+      width: 80%;
   }
 }
 
